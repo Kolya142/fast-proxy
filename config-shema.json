@@ -1,6 +1,6 @@
 {
-  "$schema": "https://github.com/Kolya142/fast-proxy/config-shema.json",  
-  "$id": "https://github.com/Kolya142/fast-proxy/config-shema.json",
+  "$schema": "https://raw.githubusercontent.com/Kolya142/fast-proxy/master/config-shema.json",  
+  "$id": "https://raw.githubusercontent.com/Kolya142/fast-proxy/master/config-shema.json",
   "type": "object"
   "servers": [
      "description": "Servers",
