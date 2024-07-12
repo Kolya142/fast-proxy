@@ -1,0 +1,46 @@
+{
+  "$schema": "https://github.com/Kolya142/fast-proxy/config-shema.json",  
+  "$id": "https://github.com/Kolya142/fast-proxy/config-shema.json",
+  "type": "object"
+  "servers": [
+     "description": "Servers",
+     "type": "array",
+     "items": {
+       "type": "object"
+       "host": {
+         "description": "Remote Server Ip"
+         "type": "string"
+       },
+       "port": {
+         "description": "Remote Server Port"
+         "type": "integer"
+       },
+       "replace": {
+         "description": "Request Replacement List",
+         "type": "array",
+         "items": {
+           "origin": {
+             "description": "From",
+             "type": "string",
+           },
+           "dist": {
+             "description": "To",
+             "type": "string",
+           }
+         }
+       }
+     },
+     "minItems": 1
+  ],
+  "options": {
+    "type": "object"
+    "addr": {      
+      "description": "Server Bind Ip",      
+      "type": "string"
+    }
+    "port": {      
+      "description": "Server Bind Port",      
+      "type": "integer"
+    }
+  }
+}
